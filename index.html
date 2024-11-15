@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AO</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/main-style.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="assets/font/font.css" />
+  </head>
+  <body>
+    <header class="header mx-auto py-2 px-2 bg-Main">
+      <nav
+        class="nav container mx-auto my-2 bg-Main px-4 border-y border-solid border-darkgray top-0 left-0 right-0 z-50 bg-opacity-95"
+      >
+        <div class="w-full">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute right-0 inset-y-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="relative right-0 p-2"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                id="menu__btn"
+              >
+                <img src="assets/img/icons/menu.png" alt="" />
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between container mx-auto bg-Main px-4"
+            >
+              <div class="flex shrink-0 items-center">
+                <img
+                  src="favicon.png"
+                  alt="AO logo"
+                  width="30"
+                  height="30"
+                  class="grayscale"
+                />
+                <h4 class="px-5 font-logoFont text-2xl">Ahmed Omran</h4>
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
+                    aria-current="page"
+                    >Home</a
+                  >
+                  <a
+                    href="#"
+                    class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
+                    >About</a
+                  >
+                  <a
+                    href="#"
+                    class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
+                    >Projects</a
+                  >
+                  <a
+                    href="#"
+                    class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
+                    >Call Me</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden sm:hidden flex-col" id="nav__menu">
+          <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col">
+            <a
+              href="#"
+              class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
+              >About</a
+            >
+            <a
+              href="#"
+              class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
+              >Projects</a
+            >
+            <a
+              href="#"
+              class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
+              >Call Me</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Section -->
+      <div
+        class="header__title relative container mx-auto py-8 text-center h-[620px]"
+      >
+        <h1
+          class="pagetitle font-logoFont tracking-tight z-30 relative text-phone sm:text-phone md:text-med lg:text-tab xl:text-long"
+        >
+          FRONTEND DEVELOPER
+        </h1>
+        <div
+          class="head__about flex flex-col lg:flex-row items-center sm:justify-between md:-top-[125px] lg:-top-[120px] xl:-top-[160px] sm:gap-12 md:gap-20 relative"
+        >
+          <!-- Text Content -->
+          <div
+            class="head__content absolute lg:relative w-full lg:w-1/2 pt-10 text-start sm:text-left z-10 text-white sm:text-darkgray bg-[#00000052] md:bg-[#ffffff50] lg:bg-transparent h-[500px] flex justify-center px-3 sm:px-3 items-start flex-col"
+          >
+            <h2
+              class="font-logoFont text-4xl sm:text-5xl md:text-6xl mb-5 sm:text-gray-800 text-Main"
+            >
+              Ahmed Omran
+            </h2>
+            <p class="text-base sm:text-lg mb-6 sm:mr-16">
+              Aspiring Front-End Developer passionate about building interactive
+              and user-friendly web applications. Currently learning core web
+              technologies like HTML, CSS, and JavaScript, with a focus on
+              modern frameworks like React. Motivated to develop practical
+              skills, collaborate in teams, and contribute to real-world
+              projects.
+            </p>
+            <div class="flex justify-center sm:justify-start">
+              <button
+                class="btn btn__call text-Main py-2 px-4 mr-4 hover:bg-gray-500 transition"
+              >
+                Call
+              </button>
+              <button
+                class="btn btn__cv text-Main py-2 px-4 hover:bg-gray-500 transition"
+              >
+                <a href="assets/cv.pdf" download>Download CV</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Image Section -->
+          <img
+            src="assets/img/My__img.png"
+            alt="my img"
+            class="h__img w-full lg:w-1/2 object-cover lg:object-contain h-[500px] lg:max-h-[500px] drop-shadow-drip"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="section--1" class="section px-4 bg-darkgray">
+        <div class="py-20 text-Main container mx-auto">
+          <h2
+            class="mx-auto mb-16 max-w-lg text-balance text-center text-4xl font-logoFont text-Main sm:text-5xl"
+          >
+            About Me
+          </h2>
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl
+              class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3"
+            >
+              <div class="mx-auto flex max-w-xs flex-col gap-y-4 text-start">
+                <h3
+                  class="font-headFont text-xl font-semibold tracking-wider sm:text-3xl"
+                >
+                  Education
+                </h3>
+                <p class="text-sm leading-6">
+                  <span class="edu__head text-2xl"
+                    >University of Sadat City</span
+                  >
+                  <br />
+                  Bachelor of Business Administration - ( BBA, Marketing )<br />
+                  <span class="text-xs">(September 2019 - June 2023)</span>
+                </p>
+              </div>
+              <div class="mx-auto flex max-w-xs flex-col gap-y-4 text-start">
+                <h3
+                  class="font-headFont text-xl font-semibold tracking-wider sm:text-3xl"
+                >
+                  Experiance
+                </h3>
+                <p class="text-sm leading-6">
+                  <span class="edu__head text-2xl mb-8">The Company Name</span>
+                  <span class="text-[10px]">(2024 - recent)</span>
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Temporibus, sint!<br />
+                </p>
+              </div>
+              <div class="">
+                <span
+                  class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-gray-500/10"
+                >
+                  HTML
+                </span>
+                <span
+                  class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-red-600/10"
+                >
+                  CSS
+                </span>
+                <span
+                  class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-yellow-600/20"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-green-600/20"
+                >
+                  Tailwind
+                </span>
+                <span
+                  class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-blue-700/10"
+                >
+                  Bootstrap
+                </span>
+                <span
+                  class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-indigo-700/10"
+                >
+                  React
+                </span>
+                <span
+                  class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-purple-700/10"
+                >
+                  Git/Github
+                </span>
+                <span
+                  class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-pink-700/10"
+                >
+                  Responsive Design
+                </span>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section id="section--2" class="section px-4 my-12">
+        <div class="container mx-auto bg-Main">
+          <div
+            class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 flex flex-col justify-center items-center"
+          >
+            <h2
+              class="mx-auto mt-16 max-w-lg text-balance text-center text-4xl font-logoFont text-darkgray sm:text-5xl"
+            >
+              My Projects
+            </h2>
+            <div
+              class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2"
+            >
+              <div class="relative lg:row-span-2">
+                <div
+                  class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"
+                ></div>
+                <div
+                  class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]"
+                >
+                  <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                    <p
+                      class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"
+                    >
+                      My Portfolio
+                    </p>
+                    <p
+                      class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                    >
+                      A responsive personal portfolio website featuring sections
+                      like "About Me," "Projects," and "Contact." Showcases my
+                      skills and experience as a Front-End Developer.
+                    </p>
+                  </div>
+                  <div
+                    class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm"
+                  >
+                    <div
+                      class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[10px] shadow-2xl"
+                    >
+                      <img
+                        class="size-full object-cover object-top grayscale hover:grayscale-0"
+                        src="assets/img/projects/project--2/MyPortfolio.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"
+                ></div>
+              </div>
+              <div class="relative max-lg:row-start-1">
+                <div
+                  class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"
+                ></div>
+                <div
+                  class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]"
+                >
+                  <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                    <p
+                      class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"
+                    >
+                      Calcio
+                    </p>
+                    <p
+                      class="my-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                    >
+                      A football news platform providing live updates, match
+                      schedules, and detailed team information. Users can search
+                      for teams and players.
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2"
+                  >
+                    <img
+                      class="w-full max-lg:max-w-xs grayscale hover:grayscale-0"
+                      src="assets/img/projects/project--3/Calcio-League.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"
+                ></div>
+              </div>
+              <div
+                class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
+              >
+                <div class="absolute inset-px rounded-lg bg-white"></div>
+                <div
+                  class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]"
+                >
+                  <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                    <p
+                      class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"
+                    >
+                      Roll Dice
+                    </p>
+                    <p
+                      class="mt-2 mb-6 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                    >
+                      A simple, fun dice game built using JavaScript. Players
+                      compete to reach a set score first, with random dice rolls
+                      determining the winner.
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-1 justify-center items-center [container-type:inline-size] max-lg:py-6 lg:pb-2"
+                  >
+                    <img
+                      class="h-[min(152px,40cqw)] object-cover object-center rounded-md grayscale hover:grayscale-0"
+                      src="assets/img/projects/project--4/Roll-Dice.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"
+                ></div>
+              </div>
+              <div class="relative lg:row-span-2">
+                <div
+                  class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
+                ></div>
+                <div
+                  class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]"
+                >
+                  <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                    <p
+                      class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"
+                    >
+                      Crusto
+                    </p>
+                    <p
+                      class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                    >
+                      An online pizza ordering website featuring a detailed
+                      menu, special offers, and a customizable order form for
+                      users.
+                    </p>
+                  </div>
+                  <div class="relative min-h-[30rem] w-full grow">
+                    <div
+                      class="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl"
+                    >
+                      <div class="flex bg-gray-800/40 ring-1 ring-white/5">
+                        <div
+                          class="-mb-px flex text-sm/6 font-medium text-gray-400"
+                        >
+                          <img
+                            src="assets/img/projects/project--1/Crusto.png"
+                            alt=""
+                            class="grayscale hover:grayscale-0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
+                ></div>
+              </div>
+            </div>
+            <button
+              id="#view__more"
+              class="btn btn__viewmore mx-auto text-Main hover:bg-gray-500 py-2 px-4 transition my-8"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-darkgray py-8 text-white">
+      <div class="container mx-auto px-4">
+        <!-- Footer Top Section -->
+        <div
+          class="flex flex-col md:flex-row justify-center items-center text-center md:text-left space-y-6 md:space-y-0"
+        >
+          <!-- Social Media Links -->
+          <div class="flex justify-center items-center gap-10">
+            <a
+              href="https://github.com/2ao1-1"
+              target="_blank"
+              class="hover:text-gray-400"
+            >
+              <img
+                src="assets/img/icons/github.png"
+                alt="GitHub"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/2ao1/"
+              target="_blank"
+              class="hover:text-gray-400"
+            >
+              <img
+                src="assets/img/icons/linkedin.png"
+                alt="LinkedIn"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a
+              href="https://x.com/2ao1_"
+              target="_blank"
+              class="hover:text-gray-400"
+            >
+              <img
+                src="assets/img/icons/twitter.png"
+                alt="Twitter"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/10.7.2ao1/"
+              target="_blank"
+              class="hover:text-gray-400"
+            >
+              <img
+                src="assets/img/icons/instagram.png"
+                alt="Instagram"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a
+              href="https://dribbble.com/ao107"
+              target="_blank"
+              class="hover:text-gray-400"
+            >
+              <img
+                src="assets/img/icons/dribbble.png"
+                alt="Dribbble"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="border-t border-gray-600 mt-6 pt-4 text-center text-sm">
+          <p>&copy; 2024 Ahmed Omran. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

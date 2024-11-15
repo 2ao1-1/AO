@@ -5,16 +5,16 @@ module.exports = {
     extend: {
       fontFamily: {
         logoFont: ["AwesomeLathusca-Regular", "Merriweather"],
-        headFont: ["Apex-Regular", "sans-serif"],
         secondFont: ["Roboto", "Open Sans"],
+        // headFont: ["Apex-Regular", "sans-serif"],
       },
       colors: {
         Main: "#F5F5F5",
-        whiteopacity: "#f5f5f580",
-        btnColor: "#D4AF37",
         darkgray: "#333",
-        darkblue: "#1E3A8A",
-        darkblur: "#00000080",
+        // btnColor: "#D4AF37",
+        // whiteopacity: "#f5f5f580",
+        // darkblue: "#1E3A8A",
+        // darkblur: "#00000080",
       },
       fontSize: {
         long: "9.28rem",

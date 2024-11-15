@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AO</title>
+    <meta
+      name="description"
+      content="Ahmed Omran's Portfolio - Front-End Developer specializing in HTML, CSS, JavaScript, and React. Check out my projects and contact me."
+    />
+
+    <meta property="og:title" content="Ahmed Omran | Front-End Developer" />
+    <meta
+      property="og:description"
+      content="Check out my portfolio showcasing my latest projects and skills in web development."
+    />
+    <meta property="og:image" content="assets/img/My__img.png" />
+    <meta property="og:url" content="https://your-portfolio-url.com" />
+    <meta property="og:type" content="website" />
+
+    <title>Ahmed Omran | Front-End Developer Portfolio</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="src/css/main-style.css" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/main-style.css" />
     <link rel="stylesheet" href="assets/font/font.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header mx-auto py-2 px-2 bg-Main">
@@ -21,11 +37,11 @@
               <button
                 type="button"
                 class="relative right-0 p-2"
-                aria-controls="mobile-menu"
+                aria-controls="nav__menu"
                 aria-expanded="false"
                 id="menu__btn"
               >
-                <img src="assets/img/icons/menu.png" alt="" />
+                <img src="assets/img/icons/menu.png" alt="Menu icon" />
               </button>
             </div>
             <div
@@ -39,31 +55,42 @@
                   height="30"
                   class="grayscale"
                 />
-                <h4 class="px-5 font-logoFont text-2xl">Ahmed Omran</h4>
+                <h4 class="hidden sm:block px-5 font-logoFont text-2xl">
+                  Ahmed Omran
+                </h4>
               </div>
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
                   <a
-                    href="#"
+                    href="javascript:void(0);"
+                    aria-label="Home Page"
                     class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
-                    aria-current="page"
-                    >Home</a
                   >
+                    Home
+                  </a>
                   <a
-                    href="#"
+                    href="pages/about.html"
+                    aria-label="About Me Page"
                     class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
-                    >About</a
                   >
+                    About
+                  </a>
                   <a
-                    href="#"
+                    href="pages/projects.html"
+                    aria-label="My Projects Page"
                     class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
-                    >Projects</a
                   >
+                    Projects
+                  </a>
                   <a
-                    href="#"
+                    href="https://wa.me/201030960225"
+                    target="_blank"
+                    aria-label="Call Me in WhatsApp"
                     class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
-                    >Call Me</a
+                    rel="noopener noreferrer"
                   >
+                    Call Me
+                  </a>
                 </div>
               </div>
             </div>
@@ -71,29 +98,37 @@
         </div>
 
         <!-- Mobile menu -->
-        <div class="hidden sm:hidden flex-col" id="nav__menu">
-          <div class="space-y-1 px-2 pb-3 pt-2 flex flex-col">
+        <div class="hidden sm:hidden" id="nav__menu">
+          <div
+            class="space-y-1 px-8 pb-3 pt-2 absolute top-12 right-0 flex flex-col bg-Main z-50 translate-y-10 transition-all w-full text-center"
+          >
             <a
-              href="#"
+              href="javascript:void(0);"
+              aria-label="Home Page"
               class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
-              aria-current="page"
               >Home</a
             >
             <a
-              href="#"
+              href="pages/about.html"
+              aria-label="About Me Page"
               class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
               >About</a
             >
             <a
-              href="#"
+              href="pages/projects.html"
+              aria-label="My Projects Page"
               class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
               >Projects</a
             >
             <a
-              href="#"
+              href="https://wa.me/201030960225"
+              target="_blank"
+              aria-label="Call Me in whatsApp"
               class="hover:drop-shadow-drip px-3 py-2 text-sm font-medium text-darkgray hover:bg-gray-700 hover:text-white"
-              >Call Me</a
+              rel="noopener noreferrer"
             >
+              Call Me
+            </a>
           </div>
         </div>
       </nav>
@@ -116,10 +151,15 @@
           >
             <h2
               class="font-logoFont text-4xl sm:text-5xl md:text-6xl mb-5 sm:text-gray-800 text-Main"
+              data-aos="fade-down"
             >
               Ahmed Omran
             </h2>
-            <p class="text-base sm:text-lg mb-6 sm:mr-16">
+            <p
+              class="text-base sm:text-lg mb-6 sm:mr-16"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
               Aspiring Front-End Developer passionate about building interactive
               and user-friendly web applications. Currently learning core web
               technologies like HTML, CSS, and JavaScript, with a focus on
@@ -130,13 +170,30 @@
             <div class="flex justify-center sm:justify-start">
               <button
                 class="btn btn__call text-Main py-2 px-4 mr-4 hover:bg-gray-500 transition"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
               >
-                Call
+                <a
+                  href="https://wa.me/201030960225"
+                  aria-label="Call Me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Call Me
+                </a>
               </button>
               <button
                 class="btn btn__cv text-Main py-2 px-4 hover:bg-gray-500 transition"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
               >
-                <a href="assets/cv.pdf" download>Download CV</a>
+                <a
+                  href="assets/Ahmed__Omran_cv.pdf"
+                  aria-label="View My CV and Download it"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Download CV</a
+                >
               </button>
             </div>
           </div>
@@ -151,7 +208,12 @@
       </div>
     </header>
     <main>
-      <section id="section--1" class="section px-4 bg-darkgray">
+      <section
+        id="section--1"
+        class="section px-4 bg-darkgray"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div class="py-20 text-Main container mx-auto">
           <h2
             class="mx-auto mb-16 max-w-lg text-balance text-center text-4xl font-logoFont text-Main sm:text-5xl"
@@ -162,7 +224,11 @@
             <dl
               class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3"
             >
-              <div class="mx-auto flex max-w-xs flex-col gap-y-4 text-start">
+              <div
+                class="mx-auto flex max-w-xs flex-col gap-y-4 text-start"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <h3
                   class="font-headFont text-xl font-semibold tracking-wider sm:text-3xl"
                 >
@@ -177,11 +243,15 @@
                   <span class="text-xs">(September 2019 - June 2023)</span>
                 </p>
               </div>
-              <div class="mx-auto flex max-w-xs flex-col gap-y-4 text-start">
+              <div
+                class="mx-auto flex max-w-xs flex-col gap-y-4 text-start"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <h3
                   class="font-headFont text-xl font-semibold tracking-wider sm:text-3xl"
                 >
-                  Experiance
+                  Experience
                 </h3>
                 <p class="text-sm leading-6">
                   <span class="edu__head text-2xl mb-8">The Company Name</span>
@@ -191,7 +261,7 @@
                   Temporibus, sint!<br />
                 </p>
               </div>
-              <div class="">
+              <div class="" data-aos="fade-up" data-aos-duration="1000">
                 <span
                   class="m-1 inline-flex items-center rounded-md bg-Main px-2 py-1 text-xs font-medium text-darkgray ring-1 ring-inset ring-gray-500/10"
                 >
@@ -237,7 +307,12 @@
           </div>
         </div>
       </section>
-      <section id="section--2" class="section px-4 my-12">
+      <section
+        id="section--2"
+        class="section px-4 my-12"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div class="container mx-auto bg-Main">
           <div
             class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 flex flex-col justify-center items-center"
@@ -250,7 +325,11 @@
             <div
               class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2"
             >
-              <div class="relative lg:row-span-2">
+              <div
+                class="relative lg:row-span-2"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div
                   class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"
                 ></div>
@@ -279,8 +358,8 @@
                     >
                       <img
                         class="size-full object-cover object-top grayscale hover:grayscale-0"
-                        src="assets/img/projects/project--2/MyPortfolio.png"
-                        alt=""
+                        src="assets/img/projects/project--1/MyPortfolio.png"
+                        alt="project--1"
                       />
                     </div>
                   </div>
@@ -289,7 +368,11 @@
                   class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"
                 ></div>
               </div>
-              <div class="relative max-lg:row-start-1">
+              <div
+                class="relative max-lg:row-start-1"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div
                   class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"
                 ></div>
@@ -314,9 +397,9 @@
                     class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2"
                   >
                     <img
-                      class="w-full max-lg:max-w-xs grayscale hover:grayscale-0"
-                      src="assets/img/projects/project--3/Calcio-League.png"
-                      alt=""
+                      class="w-full max-lg:max-w-xs grayscale hover:grayscale-0 rounded-md"
+                      src="assets/img/projects/project--2/Calcio-League.png"
+                      alt="project--2"
                     />
                   </div>
                 </div>
@@ -326,6 +409,8 @@
               </div>
               <div
                 class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 <div class="absolute inset-px rounded-lg bg-white"></div>
                 <div
@@ -350,8 +435,8 @@
                   >
                     <img
                       class="h-[min(152px,40cqw)] object-cover object-center rounded-md grayscale hover:grayscale-0"
-                      src="assets/img/projects/project--4/Roll-Dice.png"
-                      alt=""
+                      src="assets/img/projects/project--3/Roll-Dice.png"
+                      alt="project--3"
                     />
                   </div>
                 </div>
@@ -359,7 +444,11 @@
                   class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"
                 ></div>
               </div>
-              <div class="relative lg:row-span-2">
+              <div
+                class="relative lg:row-span-2"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div
                   class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
                 ></div>
@@ -389,8 +478,8 @@
                           class="-mb-px flex text-sm/6 font-medium text-gray-400"
                         >
                           <img
-                            src="assets/img/projects/project--1/Crusto.png"
-                            alt=""
+                            src="assets/img/projects/project--4/Crusto.png"
+                            alt="project--4"
                             class="grayscale hover:grayscale-0"
                           />
                         </div>
@@ -423,6 +512,7 @@
           <div class="flex justify-center items-center gap-10">
             <a
               href="https://github.com/2ao1-1"
+              aria-label="GitHub Profile"
               target="_blank"
               class="hover:text-gray-400"
             >
@@ -435,6 +525,7 @@
             </a>
             <a
               href="https://www.linkedin.com/in/2ao1/"
+              aria-label="LinkedIn Profile"
               target="_blank"
               class="hover:text-gray-400"
             >
@@ -447,6 +538,7 @@
             </a>
             <a
               href="https://x.com/2ao1_"
+              aria-label="X Profile"
               target="_blank"
               class="hover:text-gray-400"
             >
@@ -459,6 +551,7 @@
             </a>
             <a
               href="https://www.instagram.com/10.7.2ao1/"
+              aria-label="Instagram Profile"
               target="_blank"
               class="hover:text-gray-400"
             >
@@ -471,12 +564,26 @@
             </a>
             <a
               href="https://dribbble.com/ao107"
+              aria-label="Dribbble Profile"
               target="_blank"
               class="hover:text-gray-400"
             >
               <img
                 src="assets/img/icons/dribbble.png"
                 alt="Dribbble"
+                width="24"
+                height="24"
+              />
+            </a>
+            <a
+              href="https://wa.me/201030960225"
+              aria-label="WhatsApp Profile"
+              target="_blank"
+              class="hover:text-gray-400"
+            >
+              <img
+                src="assets/img/icons/whatsApp.png"
+                alt="WhatsApp"
                 width="24"
                 height="24"
               />
@@ -491,6 +598,10 @@
       </div>
     </footer>
 
-    <script src="src/js/script.js"></script>
+    <script src="src/js/script.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

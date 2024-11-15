@@ -27,29 +27,21 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 headerObserver.observe(header);
 
-// reveal sections
-const revealSection = function (entries, observer) {
-  const [entry] = entries;
-  //   console.log(entry);
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove("section--hidden");
-  observer.unobserve(entry.target);
-};
+// // reveal sections
+// const revealSection = function (entries, observer) {
+//   const [entry] = entries;
+//   //   console.log(entry);
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove("section--hidden");
+//   observer.unobserve(entry.target);
+// };
 
-const sectionObserver = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0,
-});
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0,
+// });
 
-allSections.forEach((section) => {
-  sectionObserver.observe(section);
-  section.classList.add("section--hidden");
-});
-
-// cards
-const cards = document.querySelectorAll(".card");
-// console.log(cards);
-cards.forEach((card) => {
-  card.addEventListener("click", console.log("hi"));
-});
-// cards.addEventListener("mouseover", console.log("hi"));
+// allSections.forEach((section) => {
+//   sectionObserver.observe(section);
+//   section.classList.add("section--hidden");
+// });

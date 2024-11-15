@@ -23,6 +23,10 @@ body {
   padding: 5px 15px;
   filter: drop-shadow(2px 2px 0px black);
 }
+.btn:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
 
 ::-webkit-scrollbar {
   background: 0;
@@ -41,13 +45,13 @@ body {
   position: relative;
 }
 ul#nav__menu {
-  /* position: absolute; */
+  /* position: absolute;
   top: 80px;
   right: 0;
   width: 50%;
   text-align: center;
-  /* transform: translateY(15px); */
-  transition: all 1s ease-in-out;
+  transform: translateY(15px);
+  transition: all 1s ease-in-out; */
 }
 .nav__link:hover {
   color: #fff;

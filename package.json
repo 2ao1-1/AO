@@ -1,7 +1,6 @@
 {
   "name": "AO",
   "version": "0.1.0",
-  "homepage": "https://2ao1-1.github.io/AO.git",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
@@ -17,8 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "tailwindcss -i ./index.css -o ./src/tailwind/output.css",
-    "watch": "tailwindcss -i ./index.css -o ./src/tailwind/output.css --watch",
-    "predeploy": "npm run build"
+    "watch": "tailwindcss -i ./index.css -o ./src/tailwind/output.css --watch"
   },
   "eslintConfig": {
     "extends": [

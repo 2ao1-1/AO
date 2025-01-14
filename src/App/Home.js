@@ -67,7 +67,8 @@ function Image() {
   return (
     <div className="justify-center items-center flex  my-10 relative w-[350px]">
       <img
-        src={Data.img}
+        // src={Data.img}
+        src="./public/assets/img/My__img.jpg"
         className="mx-auto w-40 md:w-[350px]"
         alt={Data.name}
       />

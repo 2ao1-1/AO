@@ -1,5 +1,5 @@
 import React from "react";
-import { Data } from "./data";
+import { Data } from "./data.js";
 
 export default function Home() {
   return (
@@ -63,6 +63,7 @@ function ShowProjects() {
 }
 
 function Image() {
+  console.log(Data.img);
   return (
     <div className="justify-center items-center flex  my-10 relative w-[350px]">
       <img

@@ -1,4 +1,4 @@
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Data } from "../data";
 
 export default function SocialMedia() {

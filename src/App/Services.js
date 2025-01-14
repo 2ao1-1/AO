@@ -1,5 +1,5 @@
 import React from "react";
-import { Data } from "./data";
+// import { Data } from "./data";
 import Footer from "./components/footer.js";
 
 export default function Services() {

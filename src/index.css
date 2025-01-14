@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "antiquestories";
+  src: url("./../public/assets/fonts/antiquestories.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ALT_ROGUE";
+  src: url("./../public/assets/fonts/ALTROGUE.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Architectural";
+  src: url("./../public/assets/fonts/Architectural.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes scrollProjects {
+  from {
+    left: 0%; /* يبدأ من خارج الشاشة من اليمين */
+  }
+  to {
+    left: -200%; /* ينتهي خارج الشاشة من اليسار */
+  }
+}
+
+.animate-scrollProjects {
+  animation: scrollProjects 60s linear infinite;
+}

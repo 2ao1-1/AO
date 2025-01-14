@@ -2,7 +2,7 @@ export const Data = {
   name: "Ahmed Omran",
   role: "Front-End Developer",
   birthYear: "2001",
-  img: "public/assets/img/My__img.png",
+  img: "../public/assets/img/My__img.png",
   location: { city: "Cairo", country: "(EG)" },
   status: "available for Freelance Projects",
   siteMap: ["Index", "About", "Projects", "Services", "Contact"],

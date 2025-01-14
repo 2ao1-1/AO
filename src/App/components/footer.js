@@ -1,6 +1,6 @@
 import SiteMap from "./SiteMap.js";
 import SocialMedia from "./SocialMedia.js";
-import { Data } from "../data.js";
+import { Data } from "../../data.js";
 
 export default function Footer() {
   return (

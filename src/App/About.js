@@ -1,6 +1,6 @@
 // import { useNavigate } from "react-router-dom";
 import React from "react";
-import { Data } from "./data.js";
+import { Data } from "../data.js";
 import Footer from "./components/footer.js";
 
 export default function About() {

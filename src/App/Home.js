@@ -1,5 +1,5 @@
 import React from "react";
-import { Data } from "./data.js";
+import { Data } from "../data.js";
 
 export default function Home() {
   return (

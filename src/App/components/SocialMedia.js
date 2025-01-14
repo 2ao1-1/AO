@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Data } from "../data";
+import { Data } from "../../data";
 
 export default function SocialMedia() {
   return (

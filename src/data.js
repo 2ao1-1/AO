@@ -2,82 +2,115 @@ export const Data = {
   name: "Ahmed Omran",
   role: "Front-End Developer",
   birthYear: "2001",
-  img: "public/assets/img/My__img.jpg",
+  images: {
+    hero: "./assets/img/my.png",
+    storyImg: "./assets/img/My__img.jpg",
+  },
   location: { city: "Cairo", country: "(EG)" },
   status: "available for Freelance Projects",
+  skills: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap", "React"],
   siteMap: ["Index", "About", "Projects", "Services", "Contact"],
   social: [
-    { name: "Resume", link: "./../public/assets/Ahmed__Omran_cv.pdf" },
+    { name: "Resume", link: "./assets/AhmedOmran_FrontendDeveloper_CV.pdf" },
     { name: "Github", link: "https://github.com/2ao1-1" },
     { name: "Linkedin", link: "https://www.linkedin.com/in/2ao1" },
     { name: "Instagram", link: "https://www.instagram.com/10.7.2ao1/" },
     { name: "Whatsapp", link: "https://wa.me/201030960225" },
     { name: "Email", link: "mailto:omran.a.jr@gmail.com" },
   ],
-  bio: "an aspiring Front-End Developer with a passion for creativity and a deep lovefor solving problems through design and technology. My journey into this field has been shaped by a lifelong fascination with art, an insatiable curiosity for technology, and a determination to turn my passion into a career.",
+  bio: "an aspiring Front-End Developer passionate about blending creativity with technology to solve problems and create impactful designs. My journey is driven by a love for art, curiosity for technology, and a commitment to turning my passion into a career.",
   story: {
-    growing: [
-      "Growing up in Egypt, I was always drawn to creative pursuits. From a young age, I loved sketching on paper, painting murals, and participating in school art competitions. These experiences taught me how to bring ideas to life visually and nurtured my love for self-expression.",
-      "In middle school, my interest in technology began to bloom. I was captivated by the world of computers and dreamed of learning hacking, even though I didn’t know where to start. By high school, I started diving into the world of programming with the help of a friend, and I quickly found myself drawn to web development.",
-      "I realized that front-end development was the perfect combination of design and technology—a space where I could create beautiful, interactive user experiences.",
-      "Although I couldn’t pursue a university degree in programming, my passion didn’t stop there. I taught myself HTML, CSS, JavaScript, and React, taking every opportunity to enhance my skills through self-study and hands-on practice. Along the way, I explored other fields like marketing, but nothing resonated with me as much as coding and design.",
-      "While I’ve faced challenges in finding my first opportunity in the tech industry, I see each obstacle as a stepping stone. These experiences have only deepened my commitment to becoming a skilled developer.",
+    Beginning:
+      "Growing up in Egypt, I was always drawn to creative pursuits. From a young age, I found joy in sketching on paper and later experimenting with wall art, which became my first canvas for visual expression. These early experiences laid the foundation for my understanding of visual composition and design principles.",
+
+    note: "Art wasn't just a hobby - it was my first language of expression, teaching me that creativity knows no bounds.",
+
+    TechSpark:
+      "My fascination with technology began during my school years. While I was intrigued by hacking and computers, it wasn't until high school that I discovered my true calling. A friend introduced me to programming, opening up a whole new world of possibilities.",
+
+    TurningPoint:
+      "Discovering that front-end development was the perfect blend of my artistic inclinations and technical interests. It was like finding the missing piece of a puzzle I didn't know I was solving.",
+    LearningJourney: [
+      "Despite facing academic challenges that prevented me from pursuing a traditional university education, my passion for technology never wavered. I took control of my learning journey, teaching myself the foundations of web development.",
+      "Each new technology I learned felt like adding another color to my palette, enabling me to create more vibrant and dynamic web experiences.",
     ],
-    hope: [
-      "Right now, I’m actively seeking opportunities to work as a Front-End Developer, where I can contribute to creating user-friendly, responsive websites while continuing to grow and learn. I’m excited to collaborate with teams that value creativity and innovation and to bring my passion for design and problem-solving to impactful projects.",
-      "I believe that great web development is about more than just code—it’s about creating experiences that resonate with users. My goal is to combine my artistic background and technical skills to build solutions that are both functional and visually engaging.",
-      "If you’re looking for a passionate, eager-to-learn developer who’s ready to make an impact, I’d love to connect and explore how I can contribute to your team.",
+    PresentFuture: [
+      "Today, I combine my artistic background with technical skills to create intuitive, user-centered web solutions. My journey has taught me that limitations are often just opportunities in disguise.",
+      "I'm actively seeking opportunities to collaborate on projects where I can contribute my unique perspective and continue growing as a developer. Each project is a new canvas, and every line of code is a brushstroke in creating something meaningful.",
     ],
+    Vision:
+      "To build my own company that bridges the gap between design and technology, creating innovative solutions that make a real difference in people's lives.",
   },
   projects: [
     {
-      title: "lol",
-      img: "https://via.placeholder.com/150",
-      bio: "hello world",
-      description: "project description",
-      skill: ["Html", "Css", "JavaScript", "Tailwind", "Bootstrap", "React"],
+      title: "Crusto",
+      img: "./assets/img/project1-crusto.png",
+      bio: "An Italian restaurant on Egyptian lands with a taste of history",
+      url: "https://crusto-resturant.netlify.app/",
+      description:
+        "A modern and visually appealing website designed to showcase the restaurant's menu and services. The site provides visitors with an interactive and seamless browsing experience, reflecting the restaurant's unique identity.",
+      skill: ["Html", "Css", "JavaScript", "Tailwind"],
+      features: [
+        "Modern and attractive design that aligns with the restaurant's brand.",
+        "Simple and intuitive user interface.",
+        "Fully responsive layout for various screen sizes.",
+      ],
     },
     {
-      title: "lol",
-      img: "https://via.placeholder.com/150",
-      bio: "hello world",
-      description: "project description",
-      skill: ["Html", "Css", "JavaScript", "Tailwind", "Bootstrap", "React"],
+      title: "Banki",
+      img: "./assets/img/project2-banki.png",
+      bio: "A fitness website promoting healthy living.",
+      url: "https://banky.netlify.app/",
+      description:
+        "Banky is a sleek and professional website designed to showcase the services and features of a modern banking institution. It aims to deliver an intuitive user experience, emphasizing trust, reliability, and simplicity for potential customers.",
+      skill: ["Html", "Css", "JavaScript"],
+      features: [
+        "Clean, modern, and professional design tailored to a banking institution.",
+        "Intuitive navigation for seamless exploration of banking services.",
+        "Fully responsive layout adaptable to various screen sizes.",
+      ],
     },
     {
-      title: "lol",
-      img: "https://via.placeholder.com/150",
-      bio: "hello world",
-      description: "project description",
-      skill: ["Html", "Css", "JavaScript", "Tailwind", "Bootstrap", "React"],
+      title: "MoveOn",
+      img: "./assets/img/project3-moveon.png",
+      bio: "An active lifestyle with fitness training.",
+      url: "https://moveon-fitness.netlify.app/",
+      description:
+        "MoveOn Fitness combines dynamic visuals and structured content to inspire and guide users on their fitness journey. The website focuses on delivering a seamless and motivational user experience, catering to fitness enthusiasts and beginners alike.",
+      skill: ["Html", "Css", "JavaScript", "Tailwind"],
+      features: [
+        "Vibrant visuals and layouts to inspire users.",
+        "Simplified access to fitness programs and wellness tips.",
+        "Ensures a consistent user experience across various devices.",
+      ],
     },
     {
-      title: "lol",
-      img: "https://via.placeholder.com/150",
-      bio: "hello world",
-      description: "project description",
-      skill: ["Html", "Css", "JavaScript", "Tailwind", "Bootstrap", "React"],
+      title: "Calcio League",
+      img: "./assets/img/project4-calcio.png",
+      bio: "Calcio League is a showcasing a italian league.",
+      url: "https://calcio-league.netlify.app/",
+      description:
+        "The website provides detailed information about teams, players, and match schedules, enabling users to follow their favorite league with ease. With a clean, sports-focused design, the site enhances the fan experience by providing real-time updates and seamless navigation.",
+      skill: ["Html", "Css", "JavaScript", "Tailwind"],
+      features: [
+        "Clean, dynamic layout that reflects the energy of a football league.",
+        "Real-time updates for teams, players, and matches.",
+        "A consistent viewing experience across all devices.",
+      ],
     },
     {
-      title: "lol",
-      img: "https://via.placeholder.com/150",
-      bio: "hello world",
-      description: "project description",
-      skill: ["Html", "Css", "JavaScript", "Tailwind", "Bootstrap", "React"],
-    },
-    {
-      title: "lol",
-      img: "https://via.placeholder.com/150",
-      bio: "hello world",
-      description: "project description",
-      skill: ["Html", "Css", "JavaScript", "Tailwind", "Bootstrap", "React"],
-    },
-    {
-      title: "lol",
-      img: "https://via.placeholder.com/150",
-      bio: "hello world",
-      description: "project description",
-      skill: ["Html", "Css", "JavaScript", "Tailwind", "Bootstrap", "React"],
+      title: "Roll Dice",
+      img: "./assets/img/project5-rollDice.png",
+      bio: "an interactive simulates a dice rolling.",
+      url: "https://roll-dice-game-v1.netlify.app/",
+      description:
+        "The website offers a simple and engaging dice-rolling feature, where users can roll one or more dice and instantly see the results. It provides a quick and entertaining way for users to enjoy a random number generator, perfect for games, decisions, or simply for fun.",
+      skill: ["Html", "Css", "JavaScript"],
+      features: [
+        "Allows users to roll one or more dice with a click.",
+        "Displays the rolled dice results immediately for a quick and engaging experience.",
+        "Optimized for various screen sizes, providing a smooth experience on all devices.",
+      ],
     },
   ],
 };

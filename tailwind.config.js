@@ -3,9 +3,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["ALT_ROGUE", "sans-serif"],
-        secondary: ["Architectural", "Open Sans"],
-        third: ["antiquestories"],
+        primary: ["soria", "sans-serif"],
+        secondary: ["Fira Code", "sans-serif"],
+        // secondary: ["Lato", "Open Sans"],
+        // third: ["antiquestories"],
       },
       colors: {
         Main: "#F5F5F5",
@@ -15,6 +16,16 @@ module.exports = {
         sm: "1px",
         md: "2px",
         lg: "3px",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        "infinite-scroll":
+          "infinite-scroll var(--scroll-duration) linear infinite",
       },
     },
   },

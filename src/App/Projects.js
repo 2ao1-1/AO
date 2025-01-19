@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="p-8">
         <HorizontalOnVerticalScroll />
       </div>
-      {/* {Data.projects.map((p, i) => (
+      {Data.projects.map((p, i) => (
         <>
           <Project
             key={i}
@@ -22,7 +22,7 @@ export default function Projects() {
             features={p.features}
           />
         </>
-      ))} */}
+      ))}
       <div>
         <Footer />
       </div>
@@ -30,34 +30,34 @@ export default function Projects() {
   );
 }
 
-// function Project({ title, image, description, skills, url, features }) {
-//   return (
-//     <div className="flex">
-//       <div>
-//         <img src={image} alt={title} />
-//       </div>
-//       <div>
-//         <h3>{title}</h3>
-//         <p>{description}</p>
-//         <ul>
-//           {features.map((feat) => (
-//             <>
-//               <li>{feat}</li>
-//             </>
-//           ))}
-//         </ul>
-//         <div>
-//           {skills.map((skill) => (
-//             <span>{skill}</span>
-//           ))}
-//         </div>
-//         <button>
-//           <Link to={url}>View Demo</Link>
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
+function Project({ title, image, description, skills, url, features }) {
+  return (
+    <div className="flex">
+      <div>
+        <img src={image} alt={title} />
+      </div>
+      <div>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <ul>
+          {features.map((feat) => (
+            <>
+              <li>{feat}</li>
+            </>
+          ))}
+        </ul>
+        <div>
+          {skills.map((skill) => (
+            <span>{skill}</span>
+          ))}
+        </div>
+        <button>
+          <Link to={url}>View Demo</Link>
+        </button>
+      </div>
+    </div>
+  );
+}
 
 const HorizontalOnVerticalScroll = () => {
   const containerRef = useRef(null);
@@ -108,13 +108,22 @@ const HorizontalOnVerticalScroll = () => {
         }}
       >
         {/* العناصر التي يتم تمريرها أفقيًا */}
-        <div style={{ width: "100vw", height: "80vh", background: "red" }}>
+        <div style={{ width: "50vw", height: "50vh", background: "red" }}>
           Item 1
         </div>
-        <div style={{ width: "100vw", height: "80vh", background: "blue" }}>
+        <div style={{ width: "50vw", height: "50vh", background: "blue" }}>
           Item 2
         </div>
-        <div style={{ width: "100vw", height: "80vh", background: "green" }}>
+        <div style={{ width: "50vw", height: "50vh", background: "green" }}>
+          Item 3
+        </div>
+        <div style={{ width: "50vw", height: "50vh", background: "gray" }}>
+          Item 3
+        </div>
+        <div style={{ width: "50vw", height: "50vh", background: "black" }}>
+          Item 3
+        </div>
+        <div style={{ width: "50vw", height: "50vh", background: "orange" }}>
           Item 3
         </div>
       </div>

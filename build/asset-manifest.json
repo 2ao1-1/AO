@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3bc89258.css",
+    "main.js": "/static/js/main.be9839a0.js",
+    "static/media/antiquestories.otf": "/static/media/antiquestories.8c52209dd0106c97c69c.otf",
+    "static/media/soria-font.ttf": "/static/media/soria-font.087527ae9c47f8daf2ad.ttf",
+    "static/media/Architectural.ttf": "/static/media/Architectural.d9390c5db9be6f5ff978.ttf",
+    "static/media/ALTROGUE.woff": "/static/media/ALTROGUE.ee9f3d03ca660aba66f4.woff",
+    "index.html": "/index.html",
+    "main.3bc89258.css.map": "/static/css/main.3bc89258.css.map",
+    "main.be9839a0.js.map": "/static/js/main.be9839a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bc89258.css",
+    "static/js/main.be9839a0.js"
+  ]
+}

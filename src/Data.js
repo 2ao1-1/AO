@@ -3,8 +3,8 @@ export const Data = {
   role: "FrontEnd Developer",
   birthYear: "2001",
   images: {
-    myImg: "./assets/My__img.jpg",
-    storyImg: "./assets/sroty1.jpg",
+    myImg: "assets/My__img.jpg",
+    storyImg: "assets/sroty1.jpg",
   },
   location: { city: "Cairo", country: "(EG)" },
   status: "available for Freelance Projects",
@@ -46,7 +46,7 @@ export const Data = {
   projects: [
     {
       title: "AO",
-      img: "./assets/project1-Portfolio.jpg",
+      img: "assets/project1-Portfolio.jpg",
       bio: `Portfolio to display my work as a frontEnd Developer`,
       url: "https://2ao1.netlify.app/",
       description:
@@ -60,7 +60,7 @@ export const Data = {
     },
     {
       title: "Banki",
-      img: "./assets/project2-banki.jpg",
+      img: "assets/project2-banki.jpg",
       bio: "A fitness website promoting healthy living.",
       url: "https://banky.netlify.app/",
       description:
@@ -74,7 +74,7 @@ export const Data = {
     },
     {
       title: "MoveOn",
-      img: "./assets/project3-moveon.jpg",
+      img: "assets/project3-moveon.jpg",
       bio: "An active lifestyle with fitness training.",
       url: "https://moveon-fitness.netlify.app/",
       description:
@@ -88,7 +88,7 @@ export const Data = {
     },
     {
       title: "Calcio League",
-      img: "./assets/project4-calcio.jpg",
+      img: "assets/project4-calcio.jpg",
       bio: "Calcio League is a showcasing a italian league.",
       url: "https://calcio-league.netlify.app/",
       description:
@@ -102,7 +102,7 @@ export const Data = {
     },
     {
       title: "Roll Dice",
-      img: "./assets/project5-rollDice.jpg",
+      img: "assets/project5-rollDice.jpg",
       bio: "an interactive simulates a dice rolling.",
       url: "https://roll-dice-game-v1.netlify.app/",
       description:
@@ -116,7 +116,7 @@ export const Data = {
     },
     {
       title: "Crusto",
-      img: "./assets/project6-crusto.jpg",
+      img: "assets/project6-crusto.jpg",
       bio: `An Italian restaurant on Egyptian lands
          with a taste of history`,
       url: "https://crusto-resturant.netlify.app/",
@@ -133,7 +133,7 @@ export const Data = {
   Tasks: [
     {
       title: "AO",
-      img: "./assets/project1-Portfolio.jpg",
+      img: "assets/project1-Portfolio.jpg",
       bio: `Portfolio to display my work as a frontEnd Developer`,
       url: "https://2ao1.netlify.app/",
       description:
@@ -147,7 +147,7 @@ export const Data = {
     },
     {
       title: "Banki",
-      img: "./assets/project2-banki.jpg",
+      img: "assets/project2-banki.jpg",
       bio: "A fitness website promoting healthy living.",
       url: "https://banky.netlify.app/",
       description:
@@ -161,7 +161,7 @@ export const Data = {
     },
     {
       title: "MoveOn",
-      img: "./assets/project3-moveon.jpg",
+      img: "assets/project3-moveon.jpg",
       bio: "An active lifestyle with fitness training.",
       url: "https://moveon-fitness.netlify.app/",
       description:
@@ -175,7 +175,7 @@ export const Data = {
     },
     {
       title: "Calcio League",
-      img: "./assets/project4-calcio.jpg",
+      img: "assets/project4-calcio.jpg",
       bio: "Calcio League is a showcasing a italian league.",
       url: "https://calcio-league.netlify.app/",
       description:
@@ -189,7 +189,7 @@ export const Data = {
     },
     {
       title: "Roll Dice",
-      img: "./assets/project5-rollDice.jpg",
+      img: "assets/project5-rollDice.jpg",
       bio: "an interactive simulates a dice rolling.",
       url: "https://roll-dice-game-v1.netlify.app/",
       description:

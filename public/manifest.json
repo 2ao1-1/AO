@@ -1,6 +1,11 @@
 {
-  "short_name": "AO",
-  "name": "AO | Frontend Developer",
+  "name": "Ahmed Omran Portfolio",
+  "short_name": "AO Portfolio",
+  "description": "Frontend Developer Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2B2B2B",
+  "background_color": "",
   "icons": [
     {
       "src": "./favicon.png",
@@ -17,9 +22,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#2B2B2B",
-  "background_color": ""
+  ]
 }

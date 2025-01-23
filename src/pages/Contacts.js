@@ -55,7 +55,7 @@ export default function Contacts() {
         inputRef.current.style.width = `${spanWidth + 5}px`;
       }
     });
-  }, [formData, spanRefs, inputRefs]);
+  }, [formData]);
 
   const validateForm = () => {
     const { name, service, timeframe, budget, email } = formData;

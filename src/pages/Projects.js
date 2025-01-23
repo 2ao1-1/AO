@@ -2,7 +2,7 @@ import { Data } from "../Data.js";
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 import React, { useRef, useEffect, useState } from "react";
-import Blog from "./components/Blog";
+// import Blog from "./components/Blog";
 import Menu from "./components/Menu";
 import Task from "./components/Tasks.js";
 

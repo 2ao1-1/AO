@@ -47,15 +47,17 @@ export const Data = {
     {
       title: "AO",
       img: "assets/project1-Portfolio.jpg",
-      bio: `Portfolio to display my work as a frontEnd Developer`,
+      bio: "Personal portfolio website showcasing frontend development skills and projects",
       url: "https://2ao1.netlify.app/",
       description:
-        "A modern and visually appealing website designed to showcase the restaurant's menu and services. The site provides visitors with an interactive and seamless browsing experience, reflecting the restaurant's unique identity.",
-      skill: ["React", "Tailwind", "Motion Framer"],
+        "A modern, responsive personal portfolio demonstrating web development expertise through interactive design and professional project showcase",
+      skill: ["React", "Tailwind", "Framer Motion"],
       features: [
-        "Modern and attractive design that aligns with the restaurant's brand.",
-        "Simple and intuitive user interface.",
-        "Fully responsive layout for various screen sizes.",
+        "Responsive web design",
+        "Interactive user interface",
+        "Smooth animations and transitions",
+        "Project showcase section",
+        "Clean, modern aesthetic",
       ],
     },
     {
@@ -137,12 +139,12 @@ export const Data = {
       bio: `Portfolio to display my work as a frontEnd Developer`,
       url: "https://2ao1.netlify.app/",
       description:
-        "A modern and visually appealing website designed to showcase the restaurant's menu and services. The site provides visitors with an interactive and seamless browsing experience, reflecting the restaurant's unique identity.",
+        "A portfolio website showcasing work as a Frontend Developer.",
       skill: ["React", "Tailwind", "Motion Framer"],
       features: [
-        "Modern and attractive design that aligns with the restaurant's brand.",
+        "Modern and attractive design.",
         "Simple and intuitive user interface.",
-        "Fully responsive layout for various screen sizes.",
+        "Fully responsive layout.",
       ],
     },
     {

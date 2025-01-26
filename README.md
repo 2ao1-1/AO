@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Personal portfolio website showcasing frontend development skills and professional projects.
+Welcome to my personal portfolio website, built with React.js and styled using Tailwind CSS. This portfolio showcases my projects, skills, and my passion for front-end development.
 
 ### 🚀 Live Demo
 
@@ -10,23 +10,35 @@ Personal portfolio website showcasing frontend development skills and profession
 
 ### 🛠 Technologies Used
 
-- React
+- React.js
 - Tailwind CSS
-- Framer Motion
+- JavaScript
 
 ### ✨ Key Features
 
-- Responsive design
-- Interactive UI
-- Smooth animations
-- Project showcase
-- Modern aesthetic
+- Clean, responsive design.
+- Interactive project showcase.
+- Easy navigation with smooth transitions.
 
 ### 🌐 Deployment
 
 Deployed on Netlify with continuous integration from GitHub
 
+## Setup Instructions:
+Clone the repository:
+git clone https://github.com/2ao1-1/AO.git
+
+## Install dependencies:
+npm install
+
+## Start the app:
+npm start
+
+## Future Updates:
+- Adding more projects.
+- Improving accessibility features.
+
 ### 📬 Contact
 
 - Email: [(omran.a.jr@gmail)](mailto:omran.a.jr@gmail.com)
-- LinkedIn: [\[Your LinkedIn Profile\]](https://www.linkedin.com/in/2ao1)
+- LinkedIn: ([https://www.linkedin.com/in/2ao1](https://www.linkedin.com/in/2ao1/))

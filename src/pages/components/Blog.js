@@ -1,17 +1,78 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 import { Data } from "../../Data";
 
-export default function BlogSection() {
-  return (
-    <section className="py-16 bg-PrimaryDark">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-Main mb-12">Blog</h2>
+const pageVariants = {
+  initial: { opacity: 0, y: -50 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+const BlogPage = () => {
+  const location = useLocation();
+
+  // إعادة موضع التمرير عند العودة
+  useEffect(() => {
+    const savedScrollPosition = sessionStorage.getItem("scrollPosition");
+    if (savedScrollPosition) {
+      window.scrollTo(0, parseInt(savedScrollPosition, 10));
+    }
+  }, [location]);
+
+  const handleSaveScrollPosition = () => {
+    sessionStorage.setItem("scrollPosition", window.scrollY);
+  };
+
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      variants={pageVariants}
+      className="min-h-screen bg-PrimaryDark py-16"
+    >
+      <div className="container mx-auto px-4">
+        <motion.h1
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-5xl font-bold text-Main mb-12 text-center"
+        >
+          Blog Posts
+        </motion.h1>
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.1,
+              },
+            },
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {Data.blogPosts.map((post, index) => (
-            <article
+            <motion.article
               key={index}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.5 },
+                },
+              }}
               className="border border-Secondary p-6 hover:border-Main transition-colors"
             >
               <div className="flex items-center gap-4 text-Details text-sm mb-4">
@@ -25,10 +86,13 @@ export default function BlogSection() {
 
               <Link
                 to={`/blog/${post.title.toLowerCase().replace(/ /g, "-")}`}
+                onClick={handleSaveScrollPosition}
                 className="text-Main hover:text-Details transition-colors inline-flex items-center gap-2"
               >
                 Read More
-                <svg
+                <motion.svg
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
                   className="w-4 h-4"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -36,12 +100,14 @@ export default function BlogSection() {
                   strokeWidth="2"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                </motion.svg>
               </Link>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.div>
   );
-}
+};
+
+export default BlogPage;

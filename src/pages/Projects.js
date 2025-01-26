@@ -2,10 +2,9 @@ import { Data } from "../Data.js";
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 import React, { useRef, useEffect, useState } from "react";
-// import Blog from "./components/Blog";
 import Menu from "./components/Menu";
 import Task from "./components/Tasks.js";
-
+// import BlogPage from "./components/Blog.js";
 export default function Projects() {
   return (
     <section className="min-h-screen bg-PrimaryDark text-Details font-secondary">
@@ -27,11 +26,10 @@ export default function Projects() {
               key={i}
               title={p.title}
               image={p.img}
-              description={p.description}
               url={p.url}
               skills={p.skill}
-              features={p.features}
               bio={p.bio}
+              type={p.type}
             />
           ))}
         </div>
@@ -40,7 +38,7 @@ export default function Projects() {
         <span className="float-end text-xs text-PrimaryLight cursor-default">
           Working on Blog section
         </span>
-        {/* <Blog /> */}
+        {/* <BlogPage /> */}
       </div>
       <Menu />
       <Footer />

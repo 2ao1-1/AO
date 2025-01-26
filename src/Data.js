@@ -134,105 +134,108 @@ export const Data = {
   ],
   Tasks: [
     {
-      title: "AO",
-      img: "assets/project1-Portfolio.jpg",
-      bio: `Portfolio to display my work as a frontEnd Developer`,
-      url: "https://2ao1.netlify.app/",
-      description:
-        "A portfolio website showcasing work as a Frontend Developer.",
-      skill: ["React", "Tailwind", "Motion Framer"],
-      features: [
-        "Modern and attractive design.",
-        "Simple and intuitive user interface.",
-        "Fully responsive layout.",
-      ],
-    },
-    {
-      title: "Banki",
-      img: "assets/project2-banki.jpg",
-      bio: "A fitness website promoting healthy living.",
-      url: "https://banky.netlify.app/",
-      description:
-        "Banky is a sleek and professional website designed to showcase the services and features of a modern banking institution. It aims to deliver an intuitive user experience, emphasizing trust, reliability, and simplicity for potential customers.",
-      skill: ["Html", "Css", "JavaScript"],
-      features: [
-        "Clean, modern, and professional design tailored to a banking institution.",
-        "Intuitive navigation for seamless exploration of banking services.",
-        "Fully responsive layout adaptable to various screen sizes.",
-      ],
-    },
-    {
-      title: "MoveOn",
-      img: "assets/project3-moveon.jpg",
-      bio: "An active lifestyle with fitness training.",
-      url: "https://moveon-fitness.netlify.app/",
-      description:
-        "MoveOn Fitness combines dynamic visuals and structured content to inspire and guide users on their fitness journey. The website focuses on delivering a seamless and motivational user experience, catering to fitness enthusiasts and beginners alike.",
-      skill: ["Html", "Css", "JavaScript", "Tailwind"],
-      features: [
-        "Vibrant visuals and layouts to inspire users.",
-        "Simplified access to fitness programs and wellness tips.",
-        "Ensures a consistent user experience across various devices.",
-      ],
-    },
-    {
-      title: "Calcio League",
-      img: "assets/project4-calcio.jpg",
-      bio: "Calcio League is a showcasing a italian league.",
-      url: "https://calcio-league.netlify.app/",
-      description:
-        "The website provides detailed information about teams, players, and match schedules, enabling users to follow their favorite league with ease. With a clean, sports-focused design, the site enhances the fan experience by providing real-time updates and seamless navigation.",
-      skill: ["Html", "Css", "JavaScript", "Tailwind"],
-      features: [
-        "Clean, dynamic layout that reflects the energy of a football league.",
-        "Real-time updates for teams, players, and matches.",
-        "A consistent viewing experience across all devices.",
-      ],
-    },
-    {
+      type: "Course",
       title: "Roll Dice",
       img: "assets/project5-rollDice.jpg",
       bio: "an interactive simulates a dice rolling.",
       url: "https://roll-dice-game-v1.netlify.app/",
-      description:
-        "The website offers a simple and engaging dice-rolling feature, where users can roll one or more dice and instantly see the results. It provides a quick and entertaining way for users to enjoy a random number generator, perfect for games, decisions, or simply for fun.",
+      repo: "https://github.com/2ao1-1/Roll-Dice",
       skill: ["Html", "Css", "JavaScript"],
-      features: [
-        "Allows users to roll one or more dice with a click.",
-        "Displays the rolled dice results immediately for a quick and engaging experience.",
-        "Optimized for various screen sizes, providing a smooth experience on all devices.",
-      ],
     },
     {
-      title: "Crusto",
-      img: "./assets/project6-crusto.jpg",
-      bio: `An Italian restaurant on Egyptian lands
-         with a taste of history`,
-      url: "https://crusto-resturant.netlify.app/",
-      description:
-        "A modern and visually appealing website designed to showcase the restaurant's menu and services. The site provides visitors with an interactive and seamless browsing experience, reflecting the restaurant's unique identity.",
-      skill: ["Html", "Css", "JavaScript", "Tailwind"],
-      features: [
-        "Modern and attractive design that aligns with the restaurant's brand.",
-        "Simple and intuitive user interface.",
-        "Fully responsive layout for various screen sizes.",
-      ],
+      type: "Course",
+      title: "Workout",
+      img: "assets/task1-workout.png",
+      bio: "A web application designed to track and visualize workout routes and activities.",
+      url: "https://workout-v1.netlify.app/",
+      repo: "https://github.com/2ao1-1/Workout",
+      skill: ["JavaScript", "HTML", "CSS"],
+    },
+    {
+      type: "Course",
+      title: "Pizza Menu",
+      img: "assets/task2-pizzaMenu.png",
+      bio: "A React-based web application showcasing a variety of pizza options with detailed descriptions and pricing.",
+      url: "https://pizza-menu-react-v1.netlify.app/",
+      repo: "https://github.com/2ao1-1/pizza-menu",
+      skill: ["React", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      type: "Course",
+      title: "Card React",
+      img: "assets/task3-cardByReact.png",
+      bio: "A React-based application for displaying customizable card components with dynamic styling.",
+      url: "https://card-react-v1.netlify.app/",
+      repo: "https://github.com/2ao1-1/card-react",
+      skill: ["React", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      type: "Course",
+      title: "Steps Tracker",
+      img: "assets/task4-steps.png",
+      bio: "A simple and interactive React application to log daily steps and monitor progress effectively.",
+      url: "https://steps-v01.netlify.app/",
+      repo: "https://github.com/2ao1-1/steps",
+      skill: ["React", "JavaScript", "HTML", "CSS"],
+    },
+    {
+      type: "Course",
+      title: "Accordion",
+      img: "assets/task5-accordion.png",
+      bio: "A simple accordion component built with React to handle collapsible sections.",
+      url: "https://accordion-v1.netlify.app/",
+      repo: "https://github.com/2ao1-1/accordion",
+      skill: ["React", "CSS"],
+    },
+    {
+      type: "Task",
+      title: "Calculator",
+      img: "assets/task6-calculator.png",
+      bio: "A simple JavaScript-based calculator with basic arithmetic operations built using HTML, CSS, and JavaScript.",
+      url: "https://calc-0001.netlify.app/",
+      repo: "https://github.com/2ao1-1/Calculator",
+      skill: ["JavaScript", "HTML", "CSS"],
+    },
+    {
+      type: "Task",
+      title: "To-Do List",
+      img: "assets/task7-todolist.png",
+      bio: "A simple To-Do List app that allows users to manage tasks dynamically using HTML, CSS, and JavaScript.",
+      url: "https://todolist-v001.netlify.app/",
+      repo: "https://github.com/2ao1-1/To-Do-List",
+      skill: ["HTML", "CSS", "JavaScript"],
     },
   ],
   blogPosts: [
     {
-      title: "مسيرتي في تعلم تطوير الويب",
-      excerpt: "كيف بدأت رحلتي في تعلم البرمجة والتحديات التي واجهتها",
-      date: "2024-01-15",
-      readTime: "5 min",
-      category: "Learning",
+      title: "How to Learn React",
+      category: "Web Development",
+      readTime: "5 min read",
+      excerpt: "React is a powerful library for building user interfaces...",
+      content:
+        "React is a JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called 'components'.",
+      codeSnippet: `function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}`,
     },
     {
-      title: "أفضل الأدوات التي استخدمها في التطوير",
-      excerpt: "مجموعة من الأدوات والإضافات التي تساعدني في العمل",
-      date: "2024-01-20",
-      readTime: "3 min",
-      category: "Tools",
+      title: "Understanding JavaScript Closures",
+      category: "JavaScript",
+      readTime: "7 min read",
+      excerpt:
+        "Closures are one of the most important concepts in JavaScript...",
+      content:
+        "A closure is a function that has access to its own scope, the scope of the outer function, and the global scope.",
+      codeSnippet: `function makeCounter() {
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
+}
+const counter = makeCounter();
+console.log(counter()); // 1
+console.log(counter()); // 2`,
     },
   ],
 };

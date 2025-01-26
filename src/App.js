@@ -7,6 +7,8 @@ import Navbar from "./pages/components/Navbar";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 // import Services from "./pages/Services";
+import BlogPage from "./pages/components/Blog";
+import BlogPostPage from "./pages/components/BlogPostPage.js";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         {/* <Route path="/services" element={<Services />} /> */}
         <Route path="/contact" element={<Contacts />} />
         {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:title" element={<BlogPostPage />} />
       </Routes>
     </BrowserRouter>
   );

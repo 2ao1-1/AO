@@ -4,13 +4,13 @@ import Menu from "./components/Menu.js";
 import emailjs from "emailjs-com";
 
 export default function Contacts() {
-  const spanRefs = {
-    name: useRef(null),
-    service: useRef(null),
-    timeframe: useRef(null),
-    budget: useRef(null),
-    email: useRef(null),
-  };
+  const spanRefs = useRef({
+    name: null,
+    service: null,
+    timeframe: null,
+    budget: null,
+    email: null,
+  });
 
   const inputRefs = {
     name: useRef(null),
@@ -46,16 +46,18 @@ export default function Contacts() {
     });
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     Object.keys(formData).forEach((key) => {
-      const spanRef = spanRefs[key];
+      const spanRef = spanRefs.current[key];
       const inputRef = inputRefs[key];
-      if (spanRef.current && inputRef.current) {
-        const spanWidth = spanRef.current.offsetWidth;
+      if (spanRef && inputRef.current) {
+        const spanWidth = spanRef.offsetWidth;
         inputRef.current.style.width = `${spanWidth + 5}px`;
       }
     });
-  }, [formData, inputRefs, spanRefs]);
+    // eslint-disable-next-line
+  }, [formData]);
 
   const validateForm = () => {
     const { name, service, timeframe, budget, email } = formData;
@@ -81,12 +83,11 @@ export default function Contacts() {
       );
       alert("The message was sent successfully via email!");
     } catch (error) {
-      alert("Failed to send email.Try again.");
+      alert("Failed to send email. Try again.");
       console.error(error);
     }
 
     resetForm();
-    alert("Message prepared");
   };
 
   const sendWhatsApp = () => {
@@ -99,14 +100,13 @@ export default function Contacts() {
       "_blank"
     );
     resetForm();
-    alert("Message sent");
   };
 
   const renderDynamicInput = (name, placeholder) => {
     return (
       <span className="relative inline-block">
         <span
-          ref={spanRefs[name]}
+          ref={(el) => (spanRefs.current[name] = el)}
           className="absolute invisible whitespace-nowrap px-1"
         >
           {formData[name] || placeholder}
@@ -142,7 +142,7 @@ export default function Contacts() {
           <button
             type="button"
             onClick={sendWhatsApp}
-            className="bg-PrimaryDark/80 text-Details border border-PrimaryLight py-2 px-4  hover:bg-PrimaryLight flex items-center justify-center gap-2"
+            className="bg-PrimaryDark/80 text-Details border border-PrimaryLight py-2 px-4 hover:bg-PrimaryLight flex items-center justify-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -151,10 +151,10 @@ export default function Contacts() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-message-circle"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-message-circle"
             >
               <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
             </svg>{" "}
@@ -164,7 +164,7 @@ export default function Contacts() {
           <button
             type="button"
             onClick={sendEmail}
-            className="bg-PrimaryDark/80 text-Details border border-PrimaryLight py-2 px-4  hover:bg-PrimaryLight flex items-center justify-center gap-2"
+            className="bg-PrimaryDark/80 text-Details border border-PrimaryLight py-2 px-4 hover:bg-PrimaryLight flex items-center justify-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -173,10 +173,10 @@ export default function Contacts() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-mail"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-mail"
             >
               <rect width="20" height="16" x="2" y="4" rx="2" />
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />

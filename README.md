@@ -28,10 +28,10 @@ Deployed on Netlify with continuous integration from GitHub
 Clone the repository:
 git clone https://github.com/2ao1-1/AO.git
 
-## Install dependencies:
+Install dependencies:
 npm install
 
-## Start the app:
+Start the app:
 npm start
 
 ## Future Updates:

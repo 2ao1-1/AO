@@ -13,7 +13,7 @@ export const Data = {
   social: [
     { name: "Resume", link: "/assets/AhmedOmran_FrontendDeveloper_CV.pdf" },
     { name: "Github", link: "https://github.com/2ao1-1" },
-    { name: "Linkedin", link: "https://www.linkedin.com/in/2ao1" },
+    { name: "Linkedin", link: "https://www.linkedin.com/in/ahmed-omran-2ao1/" },
     { name: "Instagram", link: "https://www.instagram.com/10.7.2ao1/" },
     { name: "Whatsapp", link: "https://wa.me/201030960225" },
     { name: "Email", link: "mailto:omran.a.jr@gmail.com" },

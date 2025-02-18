@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Old English";
+  src: url(./assets/fonts/OldeEnglish.ttf);
+}
+@font-face {
+  font-family: "Times";
+  src: url(./assets/fonts/times\ new\ roman.ttf);
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+  /* colors */
+  --color-paper: #fcfcfc;
+  --color-mainlines: #000000;
+  --color-darktext: #333333;
+  --color-midText: #666666;
+  --color-lightText: #d8cfc0;
+
+  /* fonts */
+  --font-title: "Old English", "Times", "serif";
+  --font-subHead: "Times", "serif";
+  --font-headline: "BebasNeue", "Arial", "sans-serif";
+  --font-content: "Arial", "sans-serif";
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--color-lightText);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  margin: auto;
+  background: var(--color-DarkText);
+}

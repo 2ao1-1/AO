@@ -16,7 +16,7 @@ export default function Projects() {
           </h1>
           <HorizontalOnVerticalScroll />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-10">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-10">
           <h2 className="text-4xl font-bold text-Main mb-12 col-span-1 md:col-span-2 lg:col-span-4">
             Tasks
           </h2>
@@ -32,14 +32,14 @@ export default function Projects() {
               type={p.type}
             />
           ))}
-        </div>
+        </div>*/}
       </div>
-      <div className="container mx-auto p-4">
+      {/* <div className="container mx-auto p-4">
         <span className="float-end text-xs text-PrimaryLight cursor-default">
           Working on Blog section
         </span>
-        {/* <BlogPage /> */}
-      </div>
+        <BlogPage />
+      </div> */}
       <Menu />
       <Footer />
     </section>

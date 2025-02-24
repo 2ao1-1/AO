@@ -160,15 +160,7 @@ export const Data = {
       repo: "https://github.com/2ao1-1/pizza-menu",
       skill: ["React", "JavaScript", "HTML", "CSS"],
     },
-    {
-      type: "Course",
-      title: "Card React",
-      img: "assets/task3-cardByReact.png",
-      bio: "A React-based application for displaying customizable card components with dynamic styling.",
-      url: "https://card-react-v1.netlify.app/",
-      repo: "https://github.com/2ao1-1/card-react",
-      skill: ["React", "JavaScript", "HTML", "CSS"],
-    },
+
     {
       type: "Course",
       title: "Steps Tracker",
